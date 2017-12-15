@@ -1,2 +1,2 @@
 # cubecollab
-Online, multi user, room based cube timer
+Online, multi user, room based Rubik's cube timer
