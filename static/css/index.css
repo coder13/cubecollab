@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+.container{
+	width:100vw;
+	height:100vh;
+	overflow: hidden;
+	background-color: #292F36;
+	color: #F0F0F0;
+}
+.innercontainer{
+	display: flex;
+}
+h1{
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+	font-weight: 900;
+	font-size: 4em; 
+}
+.left, .right{
+	flex: 1;
+}
+.left{
+	padding: 10px;
+}
+.left .join{
+	background-color: #20252B;
+	text-align: center;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.left .join .rooms{
+	max-height: 290px;
+	overflow-y: auto;
+}
+.left .join .threegrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.left .join .threegrid span{
+	padding: 20px 10px;
+}
+.left .join .threegrid:nth-of-type(even){
+	background-color: #43B2AB;
+	color: #292F36;
+}
+.left .join .roomheads{
+	background-color: #1B1F23;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.left .create{
+	width: 100%;
+	padding: 20px;
+	font-size: 2em;
+	font-weight: 900;
+	text-align: center;
+	background-color: #43B2AB;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	margin-top: 20px;
+	color: #292F36;
+}
