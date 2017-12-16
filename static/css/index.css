@@ -8,18 +8,24 @@
 	width:100vw;
 	height:100vh;
 	overflow: hidden;
-	background-color: #292F36;
-	color: #F0F0F0;
+	background-color: var(--c-black);
+	color: var(--c-white);
 }
 .innercontainer{
 	display: flex;
 }
+.header{
+	width: 100vw;
+	height: 50px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	background-color: var(--c-black-darker);
+}
 h1{
 	text-align: center;
 	width: 100%;
-	padding: 30px;
 	font-weight: 900;
-	font-size: 4em; 
+	font-size: 2em;
+	line-height: 50px; 
 }
 .left, .right{
 	flex: 1;
@@ -28,9 +34,9 @@ h1{
 	padding: 10px;
 }
 .left .join{
-	background-color: #20252B;
+	background-color: var(--c-black-dark);
 	text-align: center;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: var(--s-1);
 }
 .left .join .rooms{
 	max-height: 290px;
@@ -44,12 +50,12 @@ h1{
 	padding: 20px 10px;
 }
 .left .join .threegrid:nth-of-type(even){
-	background-color: #43B2AB;
-	color: #292F36;
+	background-color: var(--c-green);
+	color: var(--c-black);
 }
 .left .join .roomheads{
-	background-color: #1B1F23;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background-color: var(--c-black-darker);
+	box-shadow: var(--s-1);
 }
 .left .create{
 	width: 100%;
@@ -57,8 +63,8 @@ h1{
 	font-size: 2em;
 	font-weight: 900;
 	text-align: center;
-	background-color: #43B2AB;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background-color: var(--c-green);
+	box-shadow: var(--s-1);
 	margin-top: 20px;
-	color: #292F36;
+	color: var(--c-black);
 }
