@@ -29,9 +29,13 @@ h1{
 }
 .left, .right{
 	flex: 1;
-}
-.left{
 	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+.leftcontainer{
+	width: 100%;
+	height: 100%;
 }
 .left .join{
 	background-color: var(--c-black-dark);
@@ -39,12 +43,13 @@ h1{
 	box-shadow: var(--s-1);
 }
 .left .join .rooms{
-	max-height: 290px;
+	max-height: 300px;
 	overflow-y: auto;
 }
 .left .join .threegrid{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	cursor: pointer;
 }
 .left .join .threegrid span{
 	padding: 20px 10px;
@@ -57,7 +62,7 @@ h1{
 	background-color: var(--c-black-darker);
 	box-shadow: var(--s-1);
 }
-.left .create{
+.left .create, .right .login{
 	width: 100%;
 	padding: 20px;
 	font-size: 2em;
@@ -67,4 +72,13 @@ h1{
 	box-shadow: var(--s-1);
 	margin-top: 20px;
 	color: var(--c-black);
+	cursor: pointer;
+	transition: .5s ease all;
+}
+.left .create:hover, .right .login:hover{
+	box-shadow: var(--s-2);
+	background-color: var(--c-green-active);
+}
+.right .login{
+	vertical-align: middle;
 }
